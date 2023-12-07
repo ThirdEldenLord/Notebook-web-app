@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="p-2 align-items-center justify-content-center d-flex flex-column">
+    <h1 class="p-2" align="center">Create your own online notebook!</h1>
+    <h3 align="center">With this web app you can:</h3>
+    <ul list-style-type="disk" padding-left="lem">
+        <li>Make personal account</li>
+        <li>Write and save notes</li>
+        <li>Delete old notes</li>
+        <li>Create different accounts to separate notes</li>
+    </ul>
+    <br />
+    <a class="btn btn-outline-secondary d-grid gap-2 col-6 mx-auto" id="sigh_up" href="/sign-up" role="button">Want to create account?</a>
+    <h3>or</h3>
+    <a class="btn btn-outline-primary d-grid gap-2 col-6 mx-auto" id="sigh_up" href="/login" role="button">Login into you account</a>
+</div>
+
+{% endblock %}
