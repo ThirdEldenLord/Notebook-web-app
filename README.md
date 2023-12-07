@@ -1,6 +1,6 @@
 # Notebook web app
 
-### Notebook app with python, flask and bootstrap
+### Notebook app with python, flask, HTML and bootstrap
 You can sign up, login, logout, add and delete notes
 
 ### Home page
