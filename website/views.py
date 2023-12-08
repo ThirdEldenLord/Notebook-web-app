@@ -19,7 +19,7 @@ def add_notes():
         note = request.form.get('note')
         #notes should be atleast 3 letter
         if len(note) < 3:
-            flash('Your note should be longer')
+            flash('Your note should be longer', category='error')
         else:
             new_note = Note(note=note, user_id=current_user.id)
             data_base.session.add(new_note)

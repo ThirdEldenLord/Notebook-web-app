@@ -1,17 +1,19 @@
+#Making "website" folder a python package
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from os import path
 from flask_login import LoginManager
 
 data_base = SQLAlchemy()
 DB_NAME = "database.db"
 
+#Create flask app
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'qwertyasdfgh'
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
     data_base.init_app(app)
     
+    #Import blueprints
     from .views import views
     from .auth import auth
     
